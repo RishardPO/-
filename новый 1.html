@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beatles - Фан-сайт</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 100px 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hero {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Beatles_ad_1965_just_the_beatles_crop.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 200px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Фоны для каждой секции */
+        .members-bg {
+            background-color: #f0f0f0;
+        }
+
+        .albums-bg {
+            background-color: #e0e0e0;
+        }
+
+        .tracks-bg {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Beatles</h1>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#members">Участники</a>
+        <a href="#albums">Альбомы</a>
+        <a href="#tracks">Треки</a>
+    </nav>
+</header>
+
+<!-- Главная -->
+<section id="home" class="hero">
+    <h2>Добро пожаловать на фан-сайт группы The Beatles!</h2>
+    <p>Окунитесь в мир одной из величайших групп всех времён.</p>
+    <a href="#members" class="button">Узнать больше</a>
+</section>
+
+<!-- Участники -->
+<section id="members" class="members-bg">
+    <h2>Участники группы</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/John_Lennon_1969_%28cropped%29.jpg" alt="John Lennon">
+            <h3>John Lennon</h3>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Paul_McCartney_1964.jpg" alt="Paul McCartney">
+            <h3>Paul McCartney</h3>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/George_Harrison_1964.jpg" alt="George Harrison">
+            <h3>George Harrison</h3>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ringo_Starr_1964.jpg" alt="Ringo Starr">
+            <h3>Ringo Starr</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Альбомы -->
+<section id="albums" class="albums-bg">
+    <h2>Альбомы</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="Abbey Road">
+            <h3>Abbey Road (1969)</h3>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg" alt="Sgt. Pepper's">
+            <h3>Sgt. Pepper's (1967)</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Треки -->
+<section id="tracks" class="tracks-bg">
+    <h2>Популярные треки</h2>
+    <ul>
+        <li><strong>Hey Jude</strong> (1968)</li>
+        <li><strong>Let It Be</strong> (1970)</li>
+        <li><strong>Come Together</strong> (1969)</li>
+        <li><strong>Yesterday</strong> (1965)</li>
+        <li><strong>Here Comes the Sun</strong> (1969)</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 The Beatles Fan Page</p>
+</footer>
+
+</body>
+</html>
